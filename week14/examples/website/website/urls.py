@@ -22,6 +22,6 @@ urlpatterns = [
 #    url(r'^$', views.index),
     url(r'^', include("blog.urls")),
     url(r'^login/$',login,name="blog_login"),
-    url(r'^logout/$',logout, {"next_page":"index"}, name="blog_logout"),
+    url(r'^logout/$',logout,{"next_page:index"},name="logout"),
 
 ]
